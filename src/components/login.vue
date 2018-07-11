@@ -1,8 +1,37 @@
 <template>
   <div class="hello">
-    <input type="text"  v-model="username" name="" value="">
-    <input type="password"  v-model="password" name="" value="">
-<button type="button" @click= "login()"name="button">login</button>
+    <center>
+    <div class="column is-one-third">
+     <div class="box">
+<div class="field">
+  <p class="control has-icons-left has-icons-right">
+    <input class="input" type="text" v-model="username" placeholder="Username">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </p>
+</div>
+<div class="field">
+  <p class="control has-icons-left">
+    <input class="input" type="password" v-model="password" placeholder="Password">
+    <span class="icon is-small is-left">
+      <i class="fas fa-lock"></i>
+    </span>
+  </p>
+</div>
+<div class="field">
+  <p class="control">
+    <button class="button is-success" type="button" @click="login()" name="button">
+      Login
+    </button>
+  </p>
+</div>
+     </div>
+     </div>
+    </center>
   </div>
 </template>
 
